@@ -1,0 +1,185 @@
+/* start main setting */
+* {
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* end main setting */
+/* start haeader section */
+header {
+    background: linear-gradient(rgb(2 1 38 / 58%), rgb(2 1 38 / 50%)),
+        url(../images/landaing.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+header .navbar .open-button {
+    position: absolute;
+    right: 0;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 26px;
+    padding: 20px;
+    cursor: pointer;
+}
+/* end haeader section */
+/* start navbar section */
+header .navbar {
+    position: relative;
+    z-index: 1;
+}
+header .navbar nav {
+    width: 300px;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    transform: translateX(400px);
+    transition: 0.5s;
+    padding: 80px 20px;
+}
+header .navbar nav ul .close-button {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+header .navbar nav ul .close-button i {
+    border-radius: 3px;
+    color: #fff;
+    font-size: 19px;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+}
+nav ul li {
+    margin-top: 46px;
+}
+nav ul li.location {
+    display: none;
+}
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+nav ul li:last-of-type::before {
+    content: "\f002";
+    font-family: "font Awesome 5 free";
+    font-weight: 900;
+    color: #fff;
+    margin-right: 10px;
+}
+/* end navbar section */
+header .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+}
+header .box h1 {
+    font-size: 3.5rem;
+}
+/* end header section */
+/* start explore section */
+.explore {
+    padding-top: var(--pading);
+    padding-bottom: var(--pading);
+}
+.explore figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px 20px;
+}
+.explore figure .picture {
+    position: relative;
+}
+.explore figure .picture img {
+    width: 100%;
+    height: 300px;
+}
+.explore figure .picture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.explore figure .picture .caption {
+    position: absolute;
+    bottom: 4px;
+    text-align: center;
+    width: 100%;
+}
+.explore figure .picture .caption p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+/* end explore section */
+/* start journal section */
+.journal {
+    padding-top: var(--pading);
+    padding-bottom: var(--pading);
+}
+.journal .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.journal .content .box {
+    flex-basis: 48%;
+}
+.journal .content figure img {
+    width: 100%;
+}
+.journal .content .box figcaption {
+    text-align: center;
+    padding: 30px 3px;
+}
+.journal .content .box figcaption span {
+    font-size: 14px;
+}
+.journal .content .box figcaption h3 {
+    margin: 20px auto;
+}
+.journal .content .box figcaption p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 14px;
+}
+/* end journal section */
+footer {
+    background: linear-gradient(rgb(28 24 86 / 51%), rgb(28 24 86 / 22%)),
+        url(../images/footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+footer p{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    line-height: 1.7;
+}
+footer p a{
+    color: #FFF;
+    margin-right: 10px;
+}

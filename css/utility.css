@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+:root {
+    --pading: 60px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.arrow {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #ff5722;
+    border: none;
+    color: #fff;
+    padding: 10px 12px;
+    margin: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 100;
+}
+.link {
+    text-align: center;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+.link a {
+    color: #858484;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+}
+.link a:hover,
+.link a:hover::after {
+    color: #2196f3;
+}
+.link a::after {
+    content: "\f101";
+    font-family: "font Awesome 5 free";
+    position: absolute;
+    font-weight: 600;
+    color: #858484;
+    font-size: 16px;
+    right: -17px;
+}
+/* explore section */
+.special-heading {
+    text-align: center;
+}
+.special-heading p {
+    line-height: 1.7;
+    color: #ccc;
+    width: 500px;
+    max-width: 100%;
+    margin: 30px auto;
+    font-size: 14px;
+}
